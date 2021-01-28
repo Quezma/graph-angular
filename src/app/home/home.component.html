@@ -1,0 +1,11 @@
+<div class="home-page">
+  <div class="characters-container" *ngFor="let character of characters | async">
+    <img class="image-content" src="{{character.image}}" />
+    <div class="card-description">
+      <div class="character-name p-b">{{character.name}}</div>
+      <div class="character-status p-b"><span class="label">status: </span>{{character.status}}</div>
+      <div class="character-species p-b"><span class="label">species: </span>{{character.species}}</div>
+      <div class="character-gender p-b"><span class="label">gender: </span>{{character.gender}}</div>
+    </div>
+  </div>
+</div>
